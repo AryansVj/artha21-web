@@ -1,0 +1,393 @@
+section.news {
+    margin: 50px auto;
+    padding: 20px;
+}
+h1.news {
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 7vw;
+}
+.news > h3 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 400;
+    color: rgb(78, 47, 47);
+    text-decoration: 3px underline dotted;
+    text-underline-offset: 10px;
+    margin-top: 20px;    
+}
+.news > h3:hover {
+    color: rgb(170, 155, 155);
+    cursor: pointer;
+}
+.news-tile h3 {
+    text-align: center;
+}
+.news-tile .body {
+    padding: 10px;
+}
+.news-tile p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+.news-tile .post{
+    float: right;
+    padding: 0;
+    width: 65%;
+}
+
+/* Awards - removed for photo*/
+.news-tile {
+    /* border: 3px dotted rgb(46, 46, 46); */
+    border-radius: 10px;
+    padding: 10px;
+    /* box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.692); */
+    margin: 10px auto 20px;
+}
+.news-tile h3 {
+    text-align: center;
+    font-size: 1.8em;
+}
+.news-tile p {
+    text-align: center;
+}
+.awards {
+    margin: 15px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.awards div {
+    padding: 25px;
+    padding-top: 50px;
+    width: 25%;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    background: url(../images/trophy.png) no-repeat center;
+    background-size: contain;
+}
+.awards div p {
+    text-align: center;
+    font-size: 2.4em;
+    font-family: fantasy;
+    color: rgb(34, 34, 34);
+}
+.news-tile .awards-img {
+    padding-top: 25px;
+    text-align: center;
+}
+.news-tile .awards-img img {
+    width: 75vw;
+}
+.magz-back {
+    color: rgb(221, 221, 221);
+    position: relative;
+    left: -50px;
+    background-color: rgb(12, 56, 65);
+    width: 95%;
+    height: max-content;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+.magz-info {
+    padding: 25px;
+    position: relative;
+}
+.magz-info h3 {
+    font-weight: 300;
+    width: 40vw;
+    padding: 10px 0px 20px 0;
+    font-size: 5vw;
+}
+.magz-info .launch {
+    font-size: 3vw;
+    padding-left: 10px;
+}
+.magz-info .launch span {
+    color: rgb(170, 134, 15);
+}
+
+.magz-info p {
+    padding: 10px;
+    width: 50vw;
+    margin: 0;
+}
+.magz-img {
+    margin: 0;
+    padding: 0;
+    width: 38vw;
+    position: absolute;
+    left: 56vw; top: 30px;
+}
+.magz-img div {
+    position: relative;
+    float: left;
+    width: 20vw;
+    height: 20vw;
+    margin: 5px;
+}
+.magz-img div:nth-child(2) {
+    width: 15vw;
+}
+.magz-img div:nth-child(4) {
+    width: 15vw;
+}
+.magz-img div img {
+    position: absolute;
+    border: 2px solid white;
+}
+.magz-img .magz1 {
+    width: 20vw;
+    right: 0; bottom: 0;
+}
+.magz-img .magz2 {
+    width: 15vw;
+    left: 0; bottom: 0;
+}
+.magz-img .magz3 {
+    width: 13vw;
+    right: 0; top: 0;
+}
+.magz-img .magz4 {
+    width: 10vw;
+    left: 0; top: 0;
+}
+.ps-back {
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 165, 25);
+    margin: 20px 0px;
+    height: max-content;
+    padding: 50px;
+}
+.ps h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+.ps-info {
+    margin: 0;
+    padding: 10px 25px 25px;
+}
+.ps-info h3 {
+    font-weight: 300;
+    padding: 10px 0px;
+    font-size: 4vw;
+}
+.ps-info .ps-quote {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(32, 32, 32);
+}
+.ps-info p.ps-quote span {
+    display: block;
+    text-align: right;
+}
+.ps-info .ps-img {
+    margin: 20px 0 20px -142px;
+    width: 100vw;
+    padding: 20px 30px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0px 3px 10px 5px rgba(14, 14, 14, 0.678);
+}
+.ps-info .ps-img img {
+    height: 13vw;
+    width: auto;
+}
+.ps-info p {
+    text-align: justify;
+}
+
+/* ****MEDIUM SCREEN**** */
+@media (max-width: 800px) and (min-width: 641px) {
+    .ps-info .ps-img {
+        margin: 20px 0 20px -70px;
+    }
+    .ps-back {
+        background:none;
+        padding: 25px;
+    }
+    .magz {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 20px;
+        position: relative;
+    }
+    .magz-back {
+        width: 100%;
+        padding-top: 5px;
+    }
+    .magz-info h3 {
+        margin: 0;
+        padding: 5px;
+    }
+    .magz-info p {
+        width: 60vw;
+    }
+    .magz-img {
+        width: 30vw;
+        height: max-content;
+        padding: 5px;
+        position: absolute;
+        left: 65vw; top: 20px;
+    }
+    .magz-img div {
+        position: unset;
+        width: 0; height: 0;
+    }
+    .magz-img .magz1 {
+        width: 25vw;
+        left: 0; top: 0;
+    }
+    .magz-img .magz2 {
+        width: 20vw;
+        left: -3vw; top: 20vw;
+    }
+    .magz-img .magz3 {
+        width: 15vw;
+        right: 0; top: 33vw;
+    }
+    .magz-img .magz4 {
+        width: 10vw;
+        left: 8vw; top: 45vw;
+    }
+    .ps-info  {
+        background-color: rgb(230, 165, 25);
+    }
+}
+@media (max-width: 640px) {
+    .news-tile {
+        display: flex;
+        flex-direction: column;
+    }
+    .news-tile .post {
+        width: 100%;
+    }
+    .news-tile .body {
+        width: 100%;
+    }
+    .magz-back {
+        padding: 5px;
+        padding-left: 50px;
+        width: 100vw;
+    }
+    .magz-info {
+        width: 100%;
+        padding: 5px;
+    }
+    .magz-info h3 {
+        width: 100%;
+        font-size: 10vw;
+    }
+    .magz-info .launch {
+        font-size: 7vw;
+    }
+    .magz-info p {
+        margin: 0;
+        width: 100%;
+        text-align: justify;
+    }
+    .magz-info p:nth-child(3) {
+        margin-top: 75vw;
+    }
+    .magz-img {
+        margin: 0;
+        padding: 0;
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+        position: unset;
+        display: block;
+    }
+    .magz-img div {
+        /* background-color: red; */
+        position: relative;
+        width: 40vw;
+        height: 40vw;
+        margin: 1vw;
+    }
+    .magz-img div img {
+        position: absolute;
+    }
+    .magz-img .magz1 {
+        width: 40vw;
+        right: 0; bottom: 0;
+    }
+    .magz-img .magz2 {
+        width: 25vw;
+        left: 0; bottom: 0;
+    }
+    .magz-img .magz3 {
+        width: 20vw;
+        right: 0; top: 0;
+    }
+    .magz-img .magz4 {
+        width: 30vw;
+        left: 0; top: 0;
+    }
+    .magz-img div:nth-child(3),
+    .magz-img div:nth-child(4) {
+        height: 30vw;
+    }
+
+    /* Magazine */
+    .ps-back {
+        background: none;
+        padding: 0;
+    }
+    .ps-info {
+        height: max-content;
+        background-color: rgb(230, 165, 25);
+    }
+    .ps-info .ps-img {
+        position: absolute;
+        display: unset;
+        justify-content: unset;
+        margin: 0 -65px;
+        padding: 10px 0vw 10px 12vw;
+        width: 100vw;
+    }
+    .ps-info .ps-img img {
+        float: left;
+        width: 25vw;
+        margin: 1vw;
+        height: auto;
+    }
+    .ps-info .ps-img div:nth-child(2) {
+        display: none;
+    }
+    .ps-info h3 {
+        font-size: 8vw;
+    }
+    .ps-info p:nth-child(2) {
+        margin-bottom: 5vw;
+        text-align: justify;
+    }
+    .ps-info p:nth-child(4) {
+        margin-top: 90vw;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 400px) {
+    .ps-info .ps-img {
+        position: absolute;
+        display: unset;
+        justify-content: unset;
+        margin: 0 -45px;
+        padding: 5px 0vw 5px 12vw;
+        width: 100vw;
+        background-color: rgb(8, 8, 8);
+    }
+    .ps-info .ps-img img {
+        float: left;
+        width: 35vw;
+        margin: 1vw;
+        height: auto;
+    }
+    .ps-info p:nth-child(4) {
+        margin-top: 80vw;
+        text-align: justify;
+    }
+}

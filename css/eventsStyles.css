@@ -1,0 +1,219 @@
+.events-body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 25px;
+    margin: 50px 0;
+} 
+h1.events {
+    margin-bottom: 10px;
+}
+.events-header > p {
+    margin: 10px 0 30px;
+}
+.event {
+    margin: 0 0 25px;
+    padding: 25px 0;    
+    width: 100%;
+    height: max-content;
+    border: 1px solid black;
+    background-color: rgba(184, 184, 184, 0.315);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.event-icon > div {
+    position: relative;
+    width: 170px; height: 170px;
+    margin: 0 25px 25px;
+    border-radius: 10px;
+}
+.event-icon > div > h3 {
+    font-weight: 500;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.712);
+    border-radius: 10px 10px 0 0;
+    vertical-align: middle;
+}
+.event-icon > div > div {
+    position: absolute;
+    bottom: 5px;
+    height: 170px;
+    width: 170px;
+    color: white;
+    text-align: center;
+    line-height: 170px;
+    font-size: 7em;
+}
+.event-icon > div > section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.event-icon > div > section span {    
+    padding: 5%;
+}
+
+.event-body {
+    text-align: left;
+    padding: 0 25px;
+    font-size: 1.2em;
+}
+.event-body > p > span {
+    font-weight: 500;
+}
+.refer ul {
+    padding-left: 20px;
+}
+.refer li {
+    list-style: circle;
+}
+.event-body > p > a {
+    text-decoration: none;
+    color: rgb(211, 58, 12);
+}
+.event-body > p > a:hover {
+    text-decoration: underline;
+}
+
+/* Removed Temporarily */
+/* .awards {
+    padding-left: 50px;
+}
+.awards li {
+    list-style:disc;
+    font-weight: 400;
+    color: rgb(41, 41, 41);
+}
+.awards li span {
+    color: rgb(211, 58, 12);
+} */
+
+.anounce-tiles {
+    margin-top: 15px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.anounce-tiles a {
+    text-decoration: none;
+}
+.ann-tile {
+    float: left;
+    background-color: rgb(5, 80, 110);
+    width: 170px;
+    height: 150px;
+    margin: 15px 25px 15px 0;
+    border-radius: 5px;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    padding: 25px;
+}
+.ann-tile:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 80, 110);; 
+    border: 1px solid rgb(5, 80, 110);;
+    cursor: pointer;
+}
+.ann-tile h4 {
+    font-size: 0.8em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.ann-tile i {
+    font-size: 2em;
+    margin: 5px;
+}
+/* Awards */
+.anounce-tiles a:nth-child(3) .ann-tile {
+    background-color: rgb(211, 58, 12);
+}
+.anounce-tiles a:nth-child(3) .ann-tile:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(211, 58, 12); 
+    border: 1px solid rgb(211, 58, 12);
+    cursor: pointer;
+}
+.anounce-tiles a:nth-child(3) .ann-tile h4 {
+    font-size: 1.2em;
+}
+/* Judges */
+.anounce-tiles a:nth-child(4) .ann-tile {
+    background-color: rgb(156, 6, 56);
+}
+.anounce-tiles a:nth-child(4) .ann-tile:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(156, 6, 56); 
+    border: 1px solid rgb(156, 6, 56);
+    cursor: pointer;
+}
+.anounce-tiles a:nth-child(4) .ann-tile h4 {
+    font-size: 1em;
+}
+.refer li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+}
+.refer li a:hover {
+    color: rgb(211, 58, 12);
+    text-decoration: underline;
+}
+/* Contest */
+#contest-opening, #contest-closing {
+    background-color: rgb(211, 58, 12);
+}
+
+#workshop-icon {
+    background-color: rgb(47, 165, 17);
+}
+
+#voting-opening, #voting-closing {
+    background-color: rgb(155, 21, 233);
+}
+
+#talkshow-icon {
+    background-color: rgb(6, 102, 211);
+}
+
+/* ****MEDIUM SCREEN**** */
+@media (max-width: 640px) {
+    .events-body {
+        padding: 0;
+    }
+    .event {
+        display: block;
+    }
+    .event-icon {
+        display: flex;
+        padding: 0 25px;
+    }
+    .event-icon > div {
+        width: 100px; height: 100px;
+        margin: 0 10px 10px;
+        font-size: 0.5em;
+    }
+    .event-icon > div > div {
+        font-size: 6.5em;
+        bottom: 0px;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+    }
+
+    .ann-tile {
+        width: 150px; height: 150px;
+    }
+    .anounce-tiles {
+        display: flex;
+    }
+    .anounce-tiles a:nth-child(1) .ann-tile,
+    .anounce-tiles a:nth-child(4) .ann-tile {
+        display: none;
+    }
+}

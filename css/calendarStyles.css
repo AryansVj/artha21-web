@@ -1,0 +1,168 @@
+.calendar {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    background-color: rgba(219, 223, 223, 0.911);;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.548);
+    cursor: pointer;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    letter-spacing: 5px;
+    font-size: 1.1em;
+}
+.calendar-header .month {
+    margin-right: 10px;
+}
+hr {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.week-heads {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+.week-heads div {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    vertical-align: middle;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.week-days > div {
+    /* position: relative; */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    /* background-color: brown; */
+}
+.week-days>div:hover {
+    background-color: rgb(78, 78, 78);
+    color: rgb(219, 223, 223);
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.xmonth {
+    color: rgb(143, 143, 143);
+}
+
+.week-days > div.comp::after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 30px; left: 30px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(211, 58, 12);
+}
+.week-days > div.vote::after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 30px; left: 30px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(155, 21, 233);
+}
+.week-days > div:nth-child(12) {
+    border: 1px solid rgb(211, 58, 12);
+}
+.week-days > div:nth-child(24) {
+    border: 1px solid rgb(211, 58, 12);
+}
+.vote div{
+    color: rgb(155, 21, 233);
+}
+.week-days > div:nth-child(26) {
+    border: 1px solid rgb(155, 21, 233);
+}
+.ws {
+    /* background-color: rgb(56, 156, 196); */
+    border: 1px solid rgb(33, 143, 0);
+}
+.ts {
+    /* background-color: rgb(235, 86, 86); */
+    border: 1px solid rgb(6, 102, 211);
+}
+
+.comp-details, .ws-details, .vote-details, .ts-details  {
+    position: absolute;
+    left: 45vw; top: 170px;
+    width: 30vw;
+    padding: 5px 10px 5px 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.753);
+    line-height: 25px;
+    text-align: left;
+    display: none;
+}
+.week-days > div > section h4 {
+    font-weight: 500;
+}
+.week-days > div > section hr {
+    margin-left: 0;
+    width: 85%;
+}
+.comp-details h4 {
+    color: rgb(211, 58, 12);
+}
+.comp:hover section {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 0.85em;
+    font-weight: normal;
+}
+.ws-details h4 {
+    color: rgb(33, 143, 0);
+}
+.ws:hover section {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 0.85em;
+    font-weight: normal;
+}
+.vote-details h4 {
+    color: rgb(138, 12, 211);
+}
+.vote:hover section {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 0.85em;
+    font-weight: normal;
+}
+.ts-details h4 {
+    color: rgb(6, 102, 211);
+}
+.ts:hover section {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+/* ****Small Screens**** */
+@media (max-width: 640px) {
+    .week-days > div:hover section {
+        display: none;
+    }
+}

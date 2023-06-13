@@ -1,0 +1,546 @@
+@font-face {
+    font-family: 'artha';
+    src: url('../fonts/FNSanka.TTF');
+}
+@font-face {
+    font-family: 'title-artha';
+    src: url('../fonts/FRSCRIPT.TTF');
+}
+
+.artha {
+    font-family: artha;
+    font-weight: lighter;
+    font-size: 1.1em;
+}
+.artha span {
+    font-family: title-artha;
+    font-size: 1.2em;
+}
+
+/* ******MAIN-CONTENT****** */
+
+#main-content {
+    margin: 0;
+    padding: 25px 50px 0px;
+    background-color: white;
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.562);
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: auto;
+}
+h1 {
+    font-size: 4vw;
+}
+h2 {
+    font-size: 3vw;
+}
+/* ***About Content */
+#About {
+    text-align: center;
+}
+.about-content {
+    padding-top: 20px;
+}
+h1 {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    color: rgb(17, 17, 17);
+    margin: 50px auto;
+}
+p.intro {
+    margin: 20px 10vw 50px;
+    font-size: 1.7em;
+}
+p.intro span {
+    /* background-color: rgb(182, 148, 39); */
+    text-decoration: underline dotted;
+    text-underline-offset: 5px;
+}
+.about-artha {
+    padding: 0 25px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+.intro-video {
+    margin: 20px auto;
+}
+.intro-video video {
+    width: 80%;
+}
+.event-tiles {
+    /* background-color: black; */
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.event-tiles div {
+    width: 30%;
+    padding: 5px 20px;
+    margin-top: 10px;
+    text-align: justify;
+    background-color: rgb(228, 228, 228);
+}
+.event-tiles div h3 {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.event-tiles div P {
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+.event-tiles div:hover {
+    cursor: pointer;
+    background-color: rgb(208, 218, 226);
+    color: rgb(12, 65, 90);
+    border-radius: 5px;
+}
+.tags {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.tags h3 {
+    margin: 0 25px 25px;
+    font-size: 1.5em;
+    color: rgb(153, 153, 153);
+}
+.about-pb {
+    padding: 0 25px;
+    font-size: 1em;
+    text-align: justify;
+}
+.about-pb a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+.about-pb a:hover {
+    text-decoration: underline;
+    color: rgb(12, 65, 90);
+    cursor: pointer;
+}
+
+/* Events secttion */
+#Events {
+    text-align: center;
+}
+.events-header {
+    padding: 0 25px;
+}
+.events-header {
+    position: relative;
+}
+
+.event-calendar {
+    text-align: right;
+    float: right;
+    margin: 8vh 7vw 0 0;
+    color: white;
+    font-size: 1.1em;
+}
+.event-calendar h2 {
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgb(27, 27, 27);
+}
+.event-calendar p {
+    color: rgb(27, 27, 27);
+    letter-spacing: 3px;
+    background-color: rgba(255, 255, 255, 0.521);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.event-calendar p.medium {
+    display: none;
+}
+.events-image {
+    background: url('../images/desk-work.jpg') no-repeat bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+
+/* Registration */
+.register {
+    margin: 50px auto;
+    padding: 20px;
+}
+.register h2 {
+    font-weight: 400;
+    padding: 10px 0;
+}
+.reg-tiles .reg-tile {
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    font-size: 1.3em;
+    padding: 40px;
+    margin: 10px auto;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+.comp-reg {
+    background: linear-gradient(120deg, purple, rgb(12, 88, 102));
+}
+.reg-tiles .reg-tile p {
+    margin-right: 10px;
+}
+.reg-info {
+    line-height: 30px;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+.reg-btn {
+    width: max-content;
+}
+.reg-btn a {
+    margin-bottom: 15px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    /* background-color: rgb(243, 59, 26); */
+    background-color: rgb(172, 172, 172);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.reg-btn a:hover {
+    background-color: rgb(54, 54, 54);
+}
+.comp-reg .reg-btn a {
+    background-color: rgb(243, 59, 26);
+}
+.comp-reg .reg-btn a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 59, 26);  
+}
+.comp-reg .reg-btn a:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 59, 26);
+} 
+.comp-reg .reg-btn a:nth-child(2):hover {
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+.ws-reg {
+    background: linear-gradient(60deg, purple, rgb(12, 88, 102));
+}
+.ws-reg p {
+    width: 75%;
+    font-weight: 100;
+}
+.ws-btn a {
+    margin-bottom: 15px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(10, 51, 126);
+    /* background-color: rgb(243, 59, 26); */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; margin-bottom: 10px;
+    border-radius: 10px;
+}
+.ws-btn a:hover {
+    background-color: rgb(10, 51, 126);
+    color: white;
+}
+/* Support */
+section.support {
+    margin: 50px auto;
+}
+h2.support {
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 400;
+}
+.support p {
+    text-align: center;
+    padding: 10px;
+}
+.support-btn {
+    margin: 10px auto 0;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(0, 74, 185);
+}
+.support-btn a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+.support-btn i {
+    margin-left: 5px;
+}
+
+/* Back to Top */
+a.top {
+    color: rgb(134, 134, 134);
+    text-decoration: none;
+}
+div.top {
+    margin: 0 -50px;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: rgb(209, 209, 209);
+}
+a.top:hover {
+    color: rgb(73, 73, 73);
+}
+
+/* SMALL SCREEN */
+@media (min-width: 641px) { /* To Position calender except for smallest screen */
+    .calendar {
+        position: absolute;
+        bottom: 9%;
+        left: 10vw;
+    }
+}
+/* ****Medium Screen**** */
+@media (max-width:1000px) {
+    .event-tiles {
+        display: block;
+    }
+    .event-tiles div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .event-tiles div h3 {
+        text-align: left;
+    }
+    .tags {
+        display: flex;
+        font-size: 0.8em;
+    }
+    .event-calendar {
+        margin-right: 30px;
+    }
+    .event-calendar h2 {
+        font-size: 1.7em;
+    }
+    .event-calendar p.wide {
+        display: none;
+    }
+    .event-calendar p.medium {
+        font-size: 0.8em;
+        display: block;
+    }
+}
+
+/* ****SMALL SCREEN**** */
+@media (max-width: 800px) {
+    #main-content {
+        padding: 25px 20px 0px;
+        
+    }
+    h1 {
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    .event-calendar h2 {
+        display: none;
+        position: absolute;
+        text-align: center;
+        top: 27%;
+        left: 50px;
+        font-size: 4vw;
+    }
+    .event-calendar p.medium {
+        background: none;
+        color: white;
+        position: absolute;
+        display: block;
+        bottom: 360px;
+        left: 50px;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    /* Back to Top */
+    div.top {
+        margin: 0 -20px;
+    }
+    section.contact {
+        margin-bottom: 0;
+    }
+
+    a.top {
+        color: rgb(134, 134, 134);
+        text-decoration: none;
+    }
+    div.top {
+        margin: 0 -20px;
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: rgb(209, 209, 209);
+    }
+}
+
+/* ****SMALLER SCREEN***** */
+@media (max-width: 640px) {
+    #main-content {
+        padding-bottom: 0;
+    }
+    h1 {
+        font-size: 9vw;
+    }
+    h2 {
+        font-size: 7vw;
+    }
+    h1 {
+        line-height: 25px;
+        margin: 25px;
+    }
+    .about-artha {
+        padding: 10px;
+        font-size: 1em;
+        text-align: justify;
+    }
+    .event-tiles {
+        height: auto;
+        padding: 0px;
+        margin: 10px;
+        display: block;
+        justify-content: center;
+    }
+    .event-tiles div {
+        width: 100%;
+        padding: 0;
+    }
+    .event-tiles p {
+        display: none;
+    }
+    .tags {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tags h3 {
+        font-size: 1.2em;
+        margin: 10px auto 20px;
+    }
+    .intro-video {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .intro-video video {
+        width: 100%;
+    }
+    .about-pb {
+        padding: 10px;
+    }
+
+    #Events {
+        padding: 25px;
+        position: relative;
+    }
+    .events-header {
+        margin: 10px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    h1.events {
+        margin: 50px auto;
+    }
+    .events-image {
+        display: none;
+    }
+    .calendar {
+        background: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .event-calendar h2 {
+        display: none;
+    }
+    .event-calendar p.medium {
+        position: relative;
+        display: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        top: -400px;
+        left: 20px;
+        width: 100%;
+        color: black;
+    }
+
+    /* Registration */
+    .reg-info {
+        display: none;
+    }
+    .reg-tiles .reg-tile {
+        flex-direction: column;
+        padding: 20px 30px 30px;
+        position: relative;
+    }
+    .reg-tiles .reg-tile p {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .reg-btn {
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .reg-btn a {
+        margin: 10px;
+    }
+    .ws-btn a {
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    section.contact {
+        margin-bottom: 0;
+    }
+
+    a.top {
+        color: rgb(134, 134, 134);
+        text-decoration: none;
+    }
+    div.top {
+        margin: 0 -20px;
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: rgb(209, 209, 209);
+    }
+}
+
+/* ****EXTRA SMALL SCREEN**** */
+@media (max-width: 400px) {
+    h1.events {
+        margin: 10px auto;
+    }
+    .events-image {
+        display: none;
+    }
+    .calendar {
+        display: none;
+    }    
+    .event-calendar p.medium {
+        display: none;
+    }
+}

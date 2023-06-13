@@ -1,0 +1,184 @@
+h1.cont {
+    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-left: -20px;
+}
+.contact {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(209, 209, 209);
+    margin: 20px -50px 0;
+    padding: 50px 50px 10px;
+    padding-right: 0;
+    display: flex;
+}
+.contact > div {
+    width: 50%;
+}
+.contact-info {
+    padding: 50px 50px 100px;
+    width: 40%;
+}
+.contact-info .conc {
+    display: flex;
+    vertical-align: middle;
+}
+.icon {
+    background: white;
+    width: 60px; 
+    height: 60px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+.conc:hover .icon {
+    background-color: rgb(8, 107, 221);
+    transition: all 0.3s ease;
+}
+.icon img {
+    width: 30px;
+}
+.conc-info {
+    padding: 15px 0px;
+}
+.conc-info > a {
+    text-decoration: none;
+    color: black;
+}
+.conc-info span {
+    color: rgb(43, 43, 43);
+}
+
+.contact-form {
+    width: 60%;
+    padding: 50px;
+    margin: -50px -50px -50px 0;
+}
+
+form {
+    background-color: rgb(245, 245, 245);
+    color: black;
+    padding: 30px;
+    width: 80%;
+    height: max-content;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+form h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.input-box {    
+    position: relative;
+    margin-top: 10px;
+}
+.input-box input,
+.input-box textarea {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(107, 107, 107);
+    width: 95%;
+    margin: 5px 0;
+    padding: 10px 0 0;
+    font-size: 1.3em;
+}
+.input-box input:focus,
+.input-box textarea:focus {
+    border-bottom: 2px solid rgb(1, 128, 179);
+}
+.input-box span {
+    position: absolute;
+    color: rgb(53, 53, 53);
+    left: 0;
+    transition: 0.5s ease;
+}
+.input-box textarea {
+    height: 10vw;
+    resize: none;
+}
+.input-box input:focus ~ span,
+.input-box textarea:focus ~ span,
+.input-box input:valid ~ span,
+.input-box textarea:valid ~ span {
+    font-size: 0.7em;
+    color: rgb(1, 128, 179);
+    transform: translateY(-5px);
+}
+.input-box input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(0, 74, 185);
+    color: white;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+    h1.cont {
+        margin-top: -70px;
+        margin-bottom: 50px;
+        margin-left: 5px;
+    }
+    .contact {
+        font-size: 0.8em;
+        margin: 20px -20px;
+        padding: 50px 0 50px 0px;
+    }
+    .contact-info {
+        padding: 25px;
+        margin-top: 30px;
+    }
+    .conc {
+        margin-bottom: 10px;
+    }
+    .icon {
+        width: 40px; 
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+    }
+    .icon img {
+        width: 20px;
+    }
+    .conc-info {
+        padding: 5px 0;
+    }
+    form {
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    h1.cont {
+        margin: 0 0 50px;
+        text-align: center;
+        padding-right: 25px;
+    }
+    .contact {
+        display: block;
+        padding-top: 10px;
+    }
+    .contact div {
+        width: 100%;
+    }
+    .contact-info {
+        padding: 25px;
+        padding-left: 50px;
+        margin-top: auto;
+        margin-bottom: 50px;
+    }
+    .conc {
+        display: block;
+    }
+    .contact-info .icon {
+        width: 40px;
+    }
+}
